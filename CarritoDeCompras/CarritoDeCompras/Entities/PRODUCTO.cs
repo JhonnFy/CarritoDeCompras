@@ -12,7 +12,11 @@
         public string RutaImagen { get; set; }
         public string NombreImagen { get; set; }
         public bool Activo { get; set; } = true;
-
         public DateTime FechaRegistro { get; set; } = DateTime.Now;
+
+        //Mapas De Navegación
+        public MARCA MARCA { get; set; }
+        public CATEGORIA CATEGORIA { get; set; }
+
     }
 }
