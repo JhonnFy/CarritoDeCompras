@@ -100,3 +100,10 @@ Total Decimal(10,2)
 )
 
 --Relaciones
+ALTER TABLE PRODUCTO
+ADD CONSTRAINT CategoriaProducto
+FOREIGN KEY (IdCategoria) REFERENCES Categoria(IdCategoria);
+
+ALTER TABLE PRODUCTO
+ADD CONSTRAINT MarcaProducto
+FOREIGN KEY (IdMarca) REFERENCES Marca(IdMarca)
