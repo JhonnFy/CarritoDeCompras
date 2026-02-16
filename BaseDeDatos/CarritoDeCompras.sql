@@ -51,7 +51,7 @@ CREATE TABLE CARRITO(
 IdCarrito INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
 IdCliente INT, --FK
 IdProducto INT, --FK
-Cantidad INT --FK
+Cantidad INT
 )
 
 CREATE TABLE PRODUCTO(
@@ -99,17 +99,5 @@ Cantidad INT,
 Total Decimal(10,2)
 )
 
---Relaciones
-ALTER TABLE PRODUCTO
-ADD CONSTRAINT CategoriaProducto
-FOREIGN KEY (IdCategoria) REFERENCES Categoria(IdCategoria);
-
-ALTER TABLE PRODUCTO
-ADD CONSTRAINT MarcaProducto
-FOREIGN KEY (IdMarca) REFERENCES Marca(IdMarca)
-
-ALTER TABLE CARRITO
-ADD CONSTRAINT CarritoCliente
-FOREIGN KEY (IdCliente) REFERENCES Cliente(IdCliente)
 
 
