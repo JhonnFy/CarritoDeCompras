@@ -95,9 +95,9 @@ namespace CarritoDeCompras.Context
                 g.Property("Descripcion");
                 g.Property("IdMarca"); /*Fk*/
                 g.Property("IdCategoria"); /*Fk*/
-                g.Property("Precio");
+                g.Property(x => x.Precio).HasPrecision(18, 2);
                 g.Property("Stock");
-                g.Property("RutaIamgen");
+                g.Property("RutaImagen");
                 g.Property("NombreImagen");
                 g.Property("Activo");
                 g.Property("FechaRegistro");
@@ -133,7 +133,7 @@ namespace CarritoDeCompras.Context
                 i.Property("IdVenta").ValueGeneratedOnAdd();
                 i.Property("IdCliente"); /*Fk*/
                 i.Property("TotalProducto");
-                i.Property("MontoTotal");
+                i.Property(x => x.MontoTotal).HasPrecision(18, 2);
                 i.Property("Contacto");
                 i.Property("IdDistrito");
                 i.Property("Telefono");

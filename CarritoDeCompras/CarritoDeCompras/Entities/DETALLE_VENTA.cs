@@ -6,7 +6,7 @@
         public int IdVenta { get; set; }
         public int IdProducto { get; set; }
         public int Cantidad { get; set; }
-        public int total { get; set; }
+        public int Total { get; set; }
 
         //Mapa De Navegación
         public VENTA VENTA { get; set; }
