@@ -24,6 +24,14 @@ Marca
 	Microsoft.EntityFrameworkCore
 	Microsoft.EntityFrameworkCore.SqlServer
 	Microsoft.EntityFrameworkCore.Design
+
 5-Crear El AppDbContext
-6-Add-Migration
-Update-Database****
+
+6-Registrar La Cadena En Program Cs.
+
+7-Crear La Migracion
++Add-Migration dbCarritoDeCompras
++Update-Database
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/eef53cc6-9ef2-4fae-9688-02ecddbfd747" />
+
